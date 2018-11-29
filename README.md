@@ -1,1 +1,1 @@
-# mynowstrem
+worker: node bot.js
