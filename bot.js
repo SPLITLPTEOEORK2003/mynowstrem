@@ -3,7 +3,7 @@ const client = new Discord.Client();
 var prefix = ".";
 var adminprefix = '.'
 
-const developers = ["508644081438556160"]
+const developers = ["350547695569600522"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -12,7 +12,7 @@ client.on('message', message => {
     client.user.setGame(argresult);
       message.channel.send(`✅`)
   } else 
-     if (message.content === (adminprefix + "leave")) {
+     if (message.content === (adminprefix + "lev")) {
     message.guild.leave();        
   } else  
   if (message.content.startsWith(adminprefix + 'wt')) {
